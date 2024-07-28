@@ -156,14 +156,14 @@
     color: var(--recomendada2);
 }
 .card__comprar--recomendada{
-    background-color: var(--recomendada3);
+    background-color: var(--recomendada2);
 }
 .card--recomendada::before{
     content: "RECOMENDADO";
     position: absolute;
     top: 5px;
     left: 5px;
-    background-color: var(--recomendada2);
+    background-color: var(--recomendada3);
     color: #fff;
     padding: 10px;
     border-radius: var(--bordes);
