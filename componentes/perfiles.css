@@ -1,0 +1,165 @@
+.perfil {
+    padding: 15px;
+    background-color: var(--color2);
+    text-align: center;
+    width: 500px;
+    margin: 10px auto;
+    position: relative;
+}
+.perfil__imagen {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-size:cover;
+    border: 8px double var(--color1);
+}
+.perfil__nombre{
+    font-size: 30px;
+}
+.perfil__nombre, .perfil__descripcion{
+    margin-bottom: 10px;
+}
+.perfil__boton{
+    padding: 5px 15px;
+    background-color: var(--color1);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: var(--bordes);
+    cursor: pointer;
+}
+.perfil__boton:hover{
+    box-shadow: 0 0 5px dimgray;
+    background-color: var(--color3);
+}
+.perfil__descripcion{
+    font-style: italic;
+}
+
+
+.perfil--premium {
+    background-color: var(--premium1);
+}
+.perfil__nombre--premium{
+    color: var(--premium3);
+}
+.perfil__boton--premium{
+    background-color: var(--premium2);
+}
+.perfil__nombre--premium::before,
+.perfil__nombre--premium::after{
+    content: "👑";
+}
+.perfil__imagen--premium{
+    border: 8px outset var(--premium2);
+}
+.perfil__boton--premium:hover{
+    background-color: var(--premium3);
+}
+.perfil--premium::before{
+    content: "USUARIO VIP";
+    color: var(--premium3);
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #ffffe0b9;
+    font-weight: BOLD;
+    padding: 10px 15px;
+    border-radius: var(--bordes);
+}
+
+
+.perfil--bloqueado {
+    background-color: var(--bloqueado1);
+}
+.perfil__nombre--bloqueado{
+    color: var(--bloqueado3);
+    text-decoration: line-through;
+}
+.perfil__nombre--bloqueado::after,
+.perfil__nombre--bloqueado::before{
+    content: "⊘";
+    color: var(--bloqueado2);
+}
+
+.perfil__descripcion--bloqueado{
+    color: var(--bloqueado2); 
+}
+.perfil__boton--bloqueado{
+    background-color: var(--bloqueado3);
+    color: darkgrey;
+}
+.perfil__boton--bloqueado:hover{
+    background-color: var(--bloqueado3);
+    box-shadow: none;
+    cursor: no-drop;
+}
+.perfil__imagen--bloqueado{
+    border: none;
+}
+.perfil--bloqueado::before{
+    content: "USUARIO BLOQUEADO";
+    color: var(--bloqueado2);
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #f08080b9;
+    font-weight: BOLD;
+    padding: 10px 15px;
+    border-radius: var(--bordes);
+}
+
+
+.perfil--nuevo {
+    background-color: var(--nuevo1);
+}
+.perfil__nombre--nuevo{
+    color: var(--nuevo3);
+}
+.perfil__boton--nuevo{
+    background-color: var(--nuevo2);
+}
+.perfil__imagen--nuevo{
+    border: 7px dotted var(--nuevo2);
+}
+.perfil__nombre--nuevo::before{
+    content: "✔";
+    color: var(--nuevo3);
+}
+.perfil__boton--nuevo:hover{
+    background-color: var(--nuevo3);
+}
+.perfil--nuevo::before{
+    content: "USUARIO NUEVO";
+    color: var(--nuevo3);
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #90ee90b9;
+    font-weight: BOLD;
+    padding: 10px 15px;
+    border-radius: var(--bordes);
+}
+
+
+.perfil--dark{
+    background-color: #000;
+}
+.perfil__descripcion--dark, .perfil__nombre--dark{
+    color: #fff;
+}
+.perfil__imagen--dark{
+    border-color: var(--color2);
+}
+.perfil__boton--dark{
+    background-color: #fff;
+    color: #000;
+}
+.perfil__boton--dark:hover{
+    background-color: var(--color2);
+    color: #000;
+}

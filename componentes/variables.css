@@ -1,0 +1,43 @@
+:root{
+    --fuente: "Nunito", sans-serif;
+    --sombra: 0 4px 4px;
+    --bordes: 20px;
+}
+
+.card{
+    --color1: peru;
+    --color2: burlywood;
+    --color3: cornsilk;
+    --color4: darkolivegreen;
+    --nuevo1: palegreen;
+    --nuevo2: green;
+    --nuevo3: darkgreen;
+    --agotado1: dimgray;
+    --agotado2: lightgray;
+    --descuento1: lightyellow;
+    --descuento2: goldenrod;
+    --recomendada1: lightblue;
+    --recomendada2: steelblue;
+    --recomendada3: midnightblue;
+}
+
+.nav{
+    --color1: silver;
+    --color2: gainsboro;
+    --borde-nav: 1px solid #000; 
+}
+
+.perfil{
+    --color1: darkcyan;
+    --color2: whitesmoke;
+    --color3: teal;
+    --premium1: lemonchiffon;
+    --premium2: goldenrod;
+    --premium3: Darkgoldenrod;
+    --bloqueado1: lightsalmon;
+    --bloqueado2: red;
+    --bloqueado3: darkred;
+    --nuevo1: palegreen;
+    --nuevo2: green;
+    --nuevo3: darkgreen;
+}
