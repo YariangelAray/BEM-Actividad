@@ -1,0 +1,60 @@
+.comentario{
+    padding: 10px 15px;
+    border: 1px solid #c2c2c2;
+    margin: 10px 10px;
+    border-radius: var(--bordes);
+    background-color: whitesmoke;
+    width: 80%;
+}
+.comentario__autor{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.comentario--destacado{
+    background-color: #ffd900c5;
+    border-width: 0 5px;
+    border-color: goldenrod;
+}
+.comentario__autor--destacado::after{
+    content: "BEST";
+    font-weight: bold;
+    color: goldenrod;
+    margin: 20px;
+}
+
+
+.comentario--respondido{
+    margin-left: 40px;
+    border-left: 5px solid steelblue;
+    width: 75%;
+}
+.comentario__autor--respondido::after{
+    content: "respondió";
+    font-weight: bold;
+    color: steelblue;
+    margin: 20px;
+}
+
+
+.comentario--nuevo{
+    border-color: darkgreen;
+    background-color: palegreen;
+}
+.comentario__autor--nuevo::after{
+    content: "¡NUEVO!";
+    font-weight: bold;
+    color:darkgreen;
+    margin: 20px;
+}
+
+.comentario--eliminado{
+    color: dimgray;
+    text-decoration: line-through;
+    
+}
+.comentario__texto--eliminado{
+    letter-spacing: -2px;
+}
+
