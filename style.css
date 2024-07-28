@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(componentes/cards.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+:root{
+    --bordes: 20px;
+    --fuente: "Nunito", sans-serif;
+    --color1: peru;
+    --color2: burlywood;
+    --color3: cornsilk;
+    --color4: darkolivegreen;
+    --nuevo1: palegreen;
+    --nuevo2: green;
+    --nuevo3: darkgreen;
+    --sombra: 0 3px 5px;
+    --agotado1: dimgray;
+    --agotado2: lightgray;
+    --descuento1: lightyellow;
+    --descuento2: goldenrod;
+    --recomendada1: lightblue;
+    --recomendada2: steelblue;
+    --recomendada3: midnightblue;
+}

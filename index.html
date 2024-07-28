@@ -3,13 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Componentes</title>
+    <title>Cards</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="product-card product-card--featured">
-        <h2 class="product-card__title">Producto Destacado</h2>
-        <p class="product-card__description">Descripción del producto</p>
+    <div class="card">
+        <img class="card__imagen" src="Lampara.png" alt="Lampara">
+        <div class="card__contenido">
+            <h1 class="card__titulo">Lampara con forma de Gato</h1>
+            <p class="card__descripcion">Lampara LED con forma de gato. Deformable. Cuenta con 7 colores. Recargable por puerto USB. Mide aproximadamente 30cm x 20cm.</p>
+            <h2 class="card__precio">COP 50,000.00</h2>
+            <button class="card__comprar">Comprar</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card  card--nueva">
+        <img class="card__imagen" src="Lampara.png" alt="Lampara">
+        <div class="card__contenido">
+            <h1 class="card__titulo card__titulo--nueva">Lampara con forma de Gato</h1>
+            <p class="card__descripcion">Lampara LED con forma de gato. Deformable. Cuenta con 7 colores. Recargable por puerto USB. Mide aproximadamente 30cm x 20cm.</p>
+            <h2 class="card__precio">COP 50,000.00</h2>
+            <button class="card__comprar card__comprar--nueva">Comprar</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card card--agotada">
+        <img class="card__imagen" src="Lampara.png" alt="Lampara">
+        <div class="card__contenido">
+            <h1 class="card__titulo card__titulo--agotada">Lampara con forma de Gato</h1>
+            <p class="card__descripcion">Lampara LED con forma de gato. Deformable. Cuenta con 7 colores. Recargable por puerto USB. Mide aproximadamente 30cm x 20cm.</p>
+            <h2 class="card__precio card__precio--agotada">COP 50,000.00</h2>
+            <button class="card__comprar card__comprar--agotada" disabled>Comprar</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card card--descuento">
+        <img class="card__imagen" src="Lampara.png" alt="Lampara">
+        <div class="card__contenido">
+            <h1 class="card__titulo card__titulo--descuento">Lampara con forma de Gato</h1>
+            <p class="card__descripcion">Lampara LED con forma de gato. Deformable. Cuenta con 7 colores. Recargable por puerto USB. Mide aproximadamente 30cm x 20cm.</p>
+            <h2 class="card__precio card__precio--descuento">COP 50,000.00</h2>
+            <button class="card__comprar">Comprar</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card card--recomendada">
+        <img class="card__imagen" src="Lampara.png" alt="Lampara">
+        <div class="card__contenido">
+            <h1 class="card__titulo card__titulo--recomendada">Lampara con forma de Gato</h1>
+            <p class="card__descripcion">Lampara LED con forma de gato. Deformable. Cuenta con 7 colores. Recargable por puerto USB. Mide aproximadamente 30cm x 20cm.</p>
+            <h2 class="card__precio">COP 50,000.00</h2>
+            <button class="card__comprar card__comprar--recomendada">Comprar</button>
+        </div>
     </div>
 </body>
 </html>

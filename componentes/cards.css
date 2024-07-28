@@ -1,0 +1,172 @@
+.card{
+    width: 550px;
+    height: 250px;
+    padding: 10px;
+    border-radius: var(--bordes);
+    margin: 20px;
+    gap: 10px;
+    display: flex;
+    background-color: var(--color3);
+    box-shadow: var(--sombra) var(--color2);
+    position: relative;
+}
+.card__imagen{
+    height: 100%;
+    border-radius: var(--bordes);
+}
+.card__contenido{
+    text-align: justify;
+    padding: 15px;
+
+}
+.card__titulo{
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: var(--color1);
+}
+.card__precio{
+    display: inline-block;
+    font-size: 20px;
+    color: var(--color4);
+    margin: 10px;
+    font-weight: 800;
+}
+.card__comprar {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--color1);
+    border-radius: var(--bordes);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.card__comprar:hover{
+    box-shadow: 0 0 6px inset #000;
+}
+
+
+.card--nueva{
+    background-color: var(--nuevo1);
+    box-shadow: var(--sombra) var(--nuevo2);
+ 
+}
+.card__titulo--nueva{
+    color: var(--nuevo3);
+}
+.card__comprar--nueva{
+    background-color: var(--nuevo3);
+}
+.card--nueva::before {
+    content: "NUEVO";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--nuevo2);
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--bordes);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.card--agotada{
+    background-color: var(--agotado2);
+    box-shadow: var(--sombra) var(--agotado1);
+}
+.card__titulo--agotada, .card__precio--agotada{
+    color: var(--agotado1);
+}
+.card__comprar--agotada{
+    color: var(--agotado2);
+    background-color: var(--agotado1);
+}
+.card--agotada::before{
+    content: "AGOTADO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--agotado1);
+    background-color: #ffffffcc;
+    padding: 10px 20px;
+    border-radius: var(--bordes);
+}
+.card__precio--agotada{
+    text-decoration: line-through;
+}
+.card__comprar--agotada:hover{
+    box-shadow: none;
+    cursor:no-drop;
+}
+
+
+.card--descuento{
+    box-shadow: var(--sombra) var(--descuento2);
+    background-color: var(--descuento1);
+}
+.card__precio--descuento{
+    color: var(--descuento2);
+    position: relative;
+}
+.card__precio--descuento::before{
+    content: "COP 62,500.00";
+    text-decoration: line-through;
+    color: var(--agotado1);
+    position: absolute;
+    font-size: 12px;
+    top: -10px;
+}
+.card__precio--descuento::after{
+    content: "20% OFF";
+    color: var(--nuevo2);
+    position: absolute;
+    font-size: 15px;
+    left: 0;
+    bottom: -15px;
+}
+.card--descuento::before {
+    content: "DESCUENTO";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--descuento2);
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--bordes);
+    font-size: 20px;
+    font-weight: bold;
+}
+.card--descuento:hover{
+    box-shadow: 0 0 10px 4px var(--descuento2);
+}
+
+
+.card--recomendada{
+    background-color: var(--recomendada1);
+    box-shadow: 0 -1px 10px 2px var(--recomendada3);
+}
+.card__titulo--recomendada{
+    color: var(--recomendada2);
+}
+.card__comprar--recomendada{
+    background-color: var(--recomendada3);
+}
+.card--recomendada::before{
+    content: "RECOMENDADO";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--recomendada2);
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--bordes);
+    font-size: 20px;
+    font-weight: bold;
+}
