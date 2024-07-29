@@ -10,7 +10,16 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
-
+.comentario__boton{
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-weight: bold;
+}
+.comentario__boton:hover:not(.comentario__boton--eliminado){
+    color: rgba(0, 0, 0, 0.7);
+}
 
 .comentario--destacado{
     background-color: #ffd900c5;
@@ -57,4 +66,7 @@
 .comentario__texto--eliminado{
     letter-spacing: -2px;
 }
-
+.comentario__boton--eliminado{
+    cursor: no-drop;
+    text-decoration: line-through;
+}
